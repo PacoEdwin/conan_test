@@ -1,0 +1,18 @@
+[package]
+name = "foo"
+version = "0.1.0"
+authors = ["pako <pako@passware.com>"]
+edition = "2018"
+build = "./build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.5.3"
+
+[features]
+headers = []
+
+[lib]
+name = "foo"
+crate-type=["staticlib"]
